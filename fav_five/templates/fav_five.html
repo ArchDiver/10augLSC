@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+<h1 class='justify-content-cneter'>These are a few of my favorite artists</h1>
+<ul>
+    {% for key,item in fav_dict.items() %}
+            <li>{{ key }} - {{ item }}</li>
+        {% endfor %}
+    </ul>
+<h3>If you are interested in more of what I listen to you can see my list <a href="https://www.last.fm/user/toxicslushpuppy/library/artists?date_preset=ALL">here</a></h3>
+
+
+{% endblock content %}
